@@ -9,13 +9,8 @@ export default function Home() {
           💁‍♀️
         </span>
       </PageTitle>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-        asperiores eius 
-      </p>
-      <p>
-        Lorem
-      </p>
+      <p>Поки що, цей текст для перевірки</p>
+      <p>Тимчасовий текст</p>
     </div>
   );
 }

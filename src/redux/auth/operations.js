@@ -11,12 +11,12 @@ const clearAuthHeader = () => {
   axios.defaults.headers.common["Authorization"] = "";
 };
 
-/*
- * POST @ /users/signup
- * body: { name, email, password }
- *
- * After successful registration, add the token to the HTTP header
- */
+
+
+//POST @ /users/signup
+//body: { name, email, password }
+ //After successful registration, add the token to the HTTP header/
+
 export const register = createAsyncThunk(
   "auth/register",
   async (userInfo, thunkAPI) => {
@@ -30,12 +30,12 @@ export const register = createAsyncThunk(
   }
 );
 
-/*
- * POST @ /users/login
- * body: { email, password }
- *
- * After successful login, add the token to the HTTP header
- */
+
+
+//POST @ /users/login
+//body: { email, password }
+//After successful login, add the token to the HTTP header
+
 export const logIn = createAsyncThunk(
   "auth/login",
   async (userInfo, thunkAPI) => {
@@ -49,12 +49,12 @@ export const logIn = createAsyncThunk(
   }
 );
 
-/*
- * POST @ /users/logout
- * headers: Authorization: Bearer token
- *
- * After a successful logout, remove the token from the HTTP header
- */
+
+
+// POST @ /users/logout
+// headers: Authorization: Bearer token
+// After a successful logout, remove the token from the HTTP header
+
 export const logOut = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
   try {
     await axios.post("/users/logout");
@@ -64,10 +64,11 @@ export const logOut = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
   }
 });
 
-/*
- * GET @ /users/me
- * headers: Authorization: Bearer token
- */
+
+
+//  GET @ /users/me
+//  headers: Authorization: Bearer token
+
 export const refreshUser = createAsyncThunk(
   "auth/refresh",
   async (_, thunkAPI) => {
@@ -77,10 +78,11 @@ export const refreshUser = createAsyncThunk(
 
     // Add it to the HTTP header and perform the request
     setAuthHeader(savedToken);
-    const response = await axios.get("/users/me");
+    const response = await axios.get("/users/current");
 
     return response.data;
   },
+  
   {
     condition: (_, { getState }) => {
       // Reading the token from the state via getState()
