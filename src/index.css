@@ -31,7 +31,7 @@ body {
   align-items: center;
   font-size: 40px;
   color: rgb(1, 1, 1);
-  background-image: url('../src/image/2.2.3.jpg');
+  /* background-image: url('../src/image/2.2.3.jpg'); */
   /* filter: blur(10px); */
 }
 
