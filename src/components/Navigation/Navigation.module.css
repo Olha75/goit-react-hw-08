@@ -4,7 +4,12 @@
     padding: 12px;
     font-weight: 700;
     color: #2a363b;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(164, 202, 12);
+    text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+   
   }
+  
   
   .link.active {
     color: #e84a5f;

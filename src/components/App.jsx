@@ -12,11 +12,11 @@ import Loader from './Loader/Loader';
 // import ErrorMessage from './ErrorMessage/ErrorMessage';
 // import {  addContact, deleteContact } from '../redux/contacts/operations';
 
-const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
-const RegisterPage = lazy(() => import('../pages/RegistrationPage/RegistrationPage'));
-const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
-const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
-const NotFound = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
+const HomePage = lazy(() => import('../pages/HomePage'));
+const RegisterPage = lazy(() => import('../pages/RegistrationPage'));
+const LoginPage = lazy(() => import('../pages/LoginPage'));
+const ContactsPage = lazy(() => import('../pages/ContactsPage'));
+const NotFound = lazy(() => import('../pages/NotFoundPage'));
 
 
 const App = () => {
@@ -67,24 +67,27 @@ const App = () => {
             path="/register"
             element={
               <RestrictedRoute
+              redirectTo="/contacts"
                 component={<RegisterPage />}
-                redirectTo="/contacts"
+             
               />
             }
           />
+          
           <Route
             path="/login"
             element={
               <RestrictedRoute
-                component={<LoginPage />}
+                
                 redirectTo="/contacts"
+                component={<LoginPage />}
               />
             }
           />
           <Route
             path="/contacts"
             element={
-              <PrivateRoute component={<ContactsPage />} redirectTo="/login" />
+              <PrivateRoute redirectTo="/login" component={<ContactsPage />}  />
             }
           />
           <Route path="*" element={<NotFound />} />
