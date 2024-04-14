@@ -37,11 +37,11 @@ export default function LoginForm() {
       <Form className={css.form} autoComplete="off">
         <label className={css.label}>
           Email
-          <Field type="email" name="email" />
+          <Field type="email" name="email" className={css.input}  />
         </label>
         <label className={css.label}>
           Password
-          <Field type="password" name="password" />
+          <Field type="password" name="password"  className={css.input} />
         </label>
         <button className={css.button}  type="submit">Log In</button>
       </Form>
