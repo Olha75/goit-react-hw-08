@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { lazy, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
@@ -7,6 +7,14 @@ import { selectContacts, selectError, selectFilteredContacts, selectLoading } fr
 import Loader from './Loader/Loader';
 import ErrorMessage from './ErrorMessage/ErrorMessage';
 import { fetchContacts, addContact, deleteContact } from '../redux/contacts/operations';
+
+// const HomePage = lazy(() => import("../pages/HomePage"));
+// const RegisterPage = lazy(() => import("../pages/RegistrationPage"));
+// const LoginPage = lazy(() => import("../pages/LoginPage"));
+// const ContactsPage = lazy(() => import("../pages/ContactsPage"));
+
+
+
 
 
 const App = () => {
@@ -75,7 +83,6 @@ export default App;
 // import { selectIsRefreshing } from "../redux/auth/selectors";
 // import { RestrictedRoute } from "./RestrictedRoute";
 // import { PrivateRoute } from "./PrivateRoute";
-
 // const HomePage = lazy(() => import("../pages/Home"));
 // const RegisterPage = lazy(() => import("../pages/Register"));
 // const LoginPage = lazy(() => import("../pages/Login"));
