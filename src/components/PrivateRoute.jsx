@@ -13,5 +13,5 @@ export const PrivateRoute = ({
 }) => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
-  return isLoggedIn ? Component : <Navigate to={redirectTo} />;
-};
+  return isLoggedIn ? Component : <Navigate to={redirectTo} />
+}
