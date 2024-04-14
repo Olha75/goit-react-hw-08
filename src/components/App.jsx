@@ -114,25 +114,25 @@ export default App;
 //         <Loader/>
 //       ) : (
 //         <Suspense fallback={null}>
-//           <Routes>
-//             <Route path="/" element={<HomePage />} />
-//             <Route path="/register">
-//               <RestrictedRoute redirectTo="/contacts">
-//                 <RegisterPage />
-//               </RestrictedRoute>
-//             </Route>
-//             <Route path="/login">
-//               <RestrictedRoute redirectTo="/contacts">
-//                 <LoginPage />
-//               </RestrictedRoute>
-//             </Route>
-//             <Route path="/contacts">
-//               <PrivateRoute redirectTo="/login">
-//                 <ContactsPage />
-//               </PrivateRoute>
-//             </Route>
-//             <Route path="*" element={<NotFound />} />
-//           </Routes>
+          // <Routes>
+          //   <Route path="/" element={<HomePage />} />
+          //   <Route path="/register">
+          //     <RestrictedRoute redirectTo="/contacts">
+          //       <RegisterPage />
+          //     </RestrictedRoute>
+          //   </Route>
+          //   <Route path="/login">
+          //     <RestrictedRoute redirectTo="/contacts">
+          //       <LoginPage />
+          //     </RestrictedRoute>
+          //   </Route>
+          //   <Route path="/contacts">
+          //     <PrivateRoute redirectTo="/login">
+          //       <ContactsPage />
+          //     </PrivateRoute>
+          //   </Route>
+          //   <Route path="*" element={<NotFound />} />
+          // </Routes>
 //         </Suspense>
 //       )}
 //       <Toaster />
