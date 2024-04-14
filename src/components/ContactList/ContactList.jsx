@@ -1,9 +1,11 @@
 // import React from 'react';
 import { useSelector } from 'react-redux';
 import Contact from '../Contact/Contact';
-import {  selectFilteredContacts } from '../../redux/contactsSlice';
-// import { deleteContact } from '../../redux/contactsOps';
+
+
 import css from './contactList.module.css';
+import { selectFilteredContacts } from '../../redux/contacts/selectors';
+// import { deleteContact } from '../../redux/contacts/operations';
 
 
 

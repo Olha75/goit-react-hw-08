@@ -2,7 +2,8 @@
 import { nanoid } from 'nanoid';
 import { useSelector, useDispatch } from 'react-redux';
 import css from './searchBox.module.css';
-import { changeFilter, selectNameFilter } from '../../redux/filtersSlice';
+import { changeFilter } from '../../redux/filters/slice';
+import { selectNameFilter } from '../../redux/filters/selectors';
 // import { nanoid } from '@reduxjs/toolkit';
 
 export default function SearchBar() {
