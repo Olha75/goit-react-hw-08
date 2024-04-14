@@ -9,3 +9,14 @@ export const RestrictedRoute = ({ component: Component, redirectTo = "/" }) => {
 };
 
 export default RestrictedRoute;
+
+// import { Redirect } from "react-router-dom";
+// import { useSelector } from "react-redux";
+// import { selectIsLoggedIn } from "../redux/auth/selectors";
+
+// export const RestrictedRoute = ({ component: Component, redirectTo = "/" }) => {
+//   const isLoggedIn = useSelector(selectIsLoggedIn);
+//   return isLoggedIn ? <Component /> : <Redirect to={redirectTo} />;
+// };
+
+// export default RestrictedRoute;
