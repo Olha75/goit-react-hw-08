@@ -8,7 +8,7 @@ import { fetchContacts } from "../../redux/contacts/operations";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import Loader from "../../components/Loader/Loader";
-import SearchBox from "../../components/SearchBox";
+import SearchBox from "../../components/SearchBox/SearchBox";
 import {  addContact, deleteContact } from '../redux/contacts/operations';
 
 
