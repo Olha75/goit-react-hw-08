@@ -13,7 +13,7 @@ export default function LoginForm() {
   // };
 
   const successLoggedIn = ({ user }) => {
-    toast.success(`${user.name} your account successfully LoggedIn!`);
+    toast.success(`${user.name} Ви успішно авторизувалися!`);
   };
 
 

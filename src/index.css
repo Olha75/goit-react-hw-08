@@ -17,24 +17,15 @@
 
 
 body {
-  /* margin: 0; */
-  /* place-items: center; */
-  /* min-width: 320px; */
-  /* min-height: 100vh; */
-
-
-/* с першої шостої роботи*/
-
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   color: rgb(1, 1, 1);
   background: url('../src/image/2.2.3bluer.jpg');
-  /* filter: blur(10px); */
   background-size: cover;
-  
+  background-repeat: repeat;
 }
 
 
@@ -76,6 +67,7 @@ code {
   background-image: url(./image/2.2.3.jpg);
   background-color: rgb(221, 247, 238);
   border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   /* width: 400px;
   display: flex;
   flex-direction: column;
