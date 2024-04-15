@@ -17,14 +17,15 @@
 
 
 body {
-  /* height: 100vh; */
+  height: 100vh;
+  min-height: 2000px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:top;
   font-size: 40px;
   color: rgb(1, 1, 1);
   background: url('../src/image/2.2.3bluer.jpg');
-  background-size: cover;
+  background-size:cover;
   background-repeat: repeat;
 }
 

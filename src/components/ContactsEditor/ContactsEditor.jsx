@@ -1,27 +1,27 @@
 import { useDispatch } from "react-redux";
-import { addTask } from "../../redux/tasks/operations";
-import css from "./TaskEditor.module.css";
+import css from "./ContactEditor.module.css";
+import { addContact } from "../../redux/contacts/operations";
 
-export default function TaskEditor() {
+export default function ContactEditor() {
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const text = form.elements.text.value;
-    if (text !== "") {
-      dispatch(addTask(text));
+    const contact = form.elements.text.value;
+    if (contact !== "") {
+      dispatch(addContact(contact));
       form.reset();
       return;
     }
-    alert("Task cannot be empty. Enter some text!");
+    alert("Введіть дані!");
   };
 
   return (
     <form className={css.form} onSubmit={handleSubmit}>
       <input name="text" className={css.input} />
       <button type="submit" className={css.button}>
-        Add task
+        Add contact
       </button>
     </form>
   );

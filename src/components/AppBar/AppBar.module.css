@@ -4,4 +4,9 @@
     align-items: center;
     margin-bottom: 16px;
     border-bottom: 1px solid  aqua;
+    /* position: fixed; */
+  /* top:0px;
+  left: 0;
+  width: 100%;
+  z-index: 999; */
   }

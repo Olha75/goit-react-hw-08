@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    background: url('../../image/2.2.3bluer.jpg');
   }
   
   .username {
@@ -24,12 +25,13 @@
   .outbutton:hover {
     border-color: rgb(184, 117, 22);
     color:red;
+    background-color: rgb(238, 209, 216);
   }
 
   .outbutton:active {
     font-weight: bold;
     padding-top: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    border-color: rgb(136, 5, 5);
-    color:rgb(25, 24, 24);
+    color:red;
+    background-color: rgb(86, 37, 49);
   }
